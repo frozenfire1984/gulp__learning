@@ -1,6 +1,6 @@
-@import 'vars';
-@import 'elements';
-@import 'mixins';
+@import "vars";
+@import "elements";
+@import "mixins";
 
 @keyframes anim {
   0% {
@@ -28,15 +28,13 @@
 
 body {
   //background: red;
-  font-family: 'roboto', Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-weight: normal;
 
   &:fullscreen  {
     background: red;
   }
 }
-
-
 
 nav {
   a {
@@ -53,26 +51,25 @@ svg {
 }
 
 img {
-  height: auto;
-  max-width: 100%;
   width: 100%;
-
+  max-width: 100%;
+  height: auto;
 }
 
 section {
-  margin-block: rem(10px);
   border: 1px $color-border dotted;
+  margin-block: rem(10px);
 
   h2 {
     font-size: rem(20px);
-    animation: anim 3s ease-in-out infinite;
     font-weight: bold;
+    animation: anim 3s ease-in-out infinite;
   }
 
   &.promo {
-    background-image: url('../images/news_watch-big.png');
-    background-size: cover;
     padding: 1rem;
+    background-image: url("../images/news_watch-big.png");
+    background-size: cover;
 
     * {
       color: #fff;
@@ -80,9 +77,9 @@ section {
   }
 
   &.content {
-    column-count: 3;
     column-gap: 2rem;
     column-rule: 1px $color-border dotted;
+    column-count: 3;
   }
 
   &.form {
@@ -105,26 +102,21 @@ section {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
       }
-
     }
 
     .grid_item {
       border: 1px $color-border dotted;
     }
-
-
   }
 }
 
-
-
-a.click {
-  background-color: rgba(255, 0, 0, .5);
+.click {
   display: flex;
   padding: 1rem;
   transition: background-color 1s;
+  background-color: rgba(255, 0, 0, .5);
 
   &:hover {
-    background-color: rgba(255, 0, 0 ,1);
+    background-color: rgba(255, 0, 0, 1);
   }
 }

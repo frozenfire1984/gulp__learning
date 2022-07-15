@@ -29,3 +29,10 @@ sect.forEach((i) => {
 	console.log(i)
 })
 
+const cl = document.querySelector(".click")
+console.log(cl)
+cl.addEventListener("click", (e) => {
+	e.preventDefault()
+	alert("click")
+})
+
