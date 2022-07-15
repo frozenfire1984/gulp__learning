@@ -1,0 +1,17 @@
+$delta: .0001px;
+$xxs: 0;
+$xs: 320px;
+$xs-: $xs - $delta;
+$sm: 576px;
+$sm-: $sm - $delta;
+$md: 768px;
+$md-: $md - $delta;
+$lg: 992px;
+$lg-: $lg - $delta;
+$xl: 1200px;
+$xl-: $xl - $delta;
+$xxl: 1400px;
+$xxl-: $xxl - $delta;
+
+$color-border: gray;
+$color-hh: red;

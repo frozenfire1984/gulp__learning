@@ -1,0 +1,9 @@
+{
+  "alt-require": true,
+  "html-lang-require": true,
+  "inline-style-disabled": true,
+  "tag-self-close": true,
+  "space-tab-mixed-disabled": true,
+  "input-requires-label": true,
+  "tags-check": true
+}

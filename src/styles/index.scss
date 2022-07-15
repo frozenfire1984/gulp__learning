@@ -1,0 +1,130 @@
+@import 'vars';
+@import 'elements';
+@import 'mixins';
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+::selection {
+  background: brown;
+  color: #fff;
+}
+
+/*.test {
+  background: red;
+  color: red;
+}*/
+
+body {
+  //background: red;
+  font-family: 'roboto', Arial, sans-serif;
+  font-weight: normal;
+
+  &:fullscreen  {
+    background: red;
+  }
+}
+
+
+
+nav {
+  a {
+    font-weight: bold;
+  }
+}
+
+svg {
+  color: currentColor;
+
+  path {
+    stroke: currentColor;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+
+}
+
+section {
+  margin-block: rem(10px);
+  border: 1px $color-border dotted;
+
+  h2 {
+    font-size: rem(20px);
+    animation: anim 3s ease-in-out infinite;
+    font-weight: bold;
+  }
+
+  &.promo {
+    background-image: url('../images/news_watch-big.png');
+    background-size: cover;
+    padding: 1rem;
+
+    * {
+      color: #fff;
+    }
+  }
+
+  &.content {
+    column-count: 3;
+    column-gap: 2rem;
+    column-rule: 1px $color-border dotted;
+  }
+
+  &.form {
+    input {
+      &::placeholder {
+        color: red;
+      }
+    }
+  }
+
+  &.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1rem;
+
+    @media (min-width: 768px) {
+
+      & {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+    }
+
+    .grid_item {
+      border: 1px $color-border dotted;
+    }
+
+
+  }
+}
+
+
+
+a.click {
+  background-color: rgba(255, 0, 0, .5);
+  display: flex;
+  padding: 1rem;
+  transition: background-color 1s;
+
+  &:hover {
+    background-color: rgba(255, 0, 0 ,1);
+  }
+}

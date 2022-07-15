@@ -1,0 +1,20 @@
+rules:
+  no-ids: 0
+  no-color-keywords: 0
+  no-color-literals: 0
+  no-css-comments: 0
+  class-name-format:
+    - 1
+    - convention: strictbem
+  no-misspelled-properties:
+    - 1
+    - extra-properties:
+        - gap
+  property-sort-order:
+    - 1
+    - order: smacss
+  empty-line-between-blocks:
+    - 1
+    - ignore-single-line-rulesets: true
+  no-transition-all: 0
+  single-line-per-selector: 0
